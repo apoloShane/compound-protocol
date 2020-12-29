@@ -3,6 +3,7 @@ pragma solidity ^0.5.16;
 import "./PriceOracle.sol";
 import "./CErc20.sol";
 
+
 contract SimplePriceOracle is PriceOracle {
     mapping(address => uint) prices;
     event PricePosted(address asset, uint previousPriceMantissa, uint requestedPriceMantissa, uint newPriceMantissa);
